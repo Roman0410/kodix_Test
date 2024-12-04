@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+  padding: 32px 59px 22px 59px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header_navList {
+    display: flex;
+  }
+  .header_logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header_navItem {
+    display: flex;
+    a {
+      padding: 8px 17px;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.7px;
+      opacity: 0.5;
+      transition: opacity 0.1s linear;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .authLinks {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .logIn,
+  .signUp,
+  .logOut {
+    height: 42px;
+    border-radius: 24px;
+    width: 114px;
+    font-size: 14px;
+    line-height: 100%;
+    transition: all 0.1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #575757;
+    }
+  }
+  .logIn,
+  .logOut {
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    font-weight: 500;
+    color: #000;
+  }
+  .signUp {
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #04aa00;
+    font-weight: 600;
+    color: #fff;
+    &:hover {
+      background: #37c735;
+      border: 1px solid #46c42d;
+    }
+  }
+}
